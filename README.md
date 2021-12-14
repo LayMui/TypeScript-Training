@@ -14,3 +14,8 @@ To start the ts compiler in watch mode
 
 5. Create your very first TS file at src/index.ts
 6. Check the JS version at lib/index.js
+
+To execute the JS file
+```
+node lib/index.js
+```
