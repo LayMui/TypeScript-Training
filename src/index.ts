@@ -29,4 +29,30 @@ class Queue<T> {
 
 let queue: Queue<number> = new Queue(); // A queue of type number
 
+// Array 
+let array1: Array<number> = [1,2,3]
+let array2: number[] = [1, 3, 4]
 
+// Tuple - fixed length
+let tuple2: [ number, number] = [0,0]
+let tuple3: [number, number, number] = [0, 0, 0]
+
+// usage
+tuple2 = [1,2]
+tuple3 = [1,2, 5]
+
+// JS Objects
+let center: { x: number, y: number} = {
+ x: 0,
+ y: 0
+}
+
+// Type alias
+// Allow us to name our intent and remove duplication
+type Point = { x: number, y: number};
+
+let center2: Point = {
+ x: 0,
+ y: 1,
+
+}
