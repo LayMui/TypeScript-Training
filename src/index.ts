@@ -104,15 +104,15 @@ let center2: Point = {
 
  // Class
  class Animal {
-  #name: string;
+  protected name: string;
 
   constructor(name: string) {
-   this.#name= name;
+   this.name= name;
 
   }
 
   public move(distanceInMeters: number): void {
-    console.log(`${this.#name} move`)
+    console.log(`${this.name} move`)
   }
  }
 
@@ -122,6 +122,6 @@ let center2: Point = {
  // Class support inheritance
 class Bird extends Animal{
     fly(distanceInMeters: number) {
-       // console.log(`${this.name} fly`)
+        console.log(`${this.name} fly`)
     }
 }
