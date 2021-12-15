@@ -1,5 +1,8 @@
+import { createDebuggerStatement, ImportsNotUsedAsValues } from "typescript";
+
 let message: string = 'Hello World'
 console.log(message)
+
 
 
 // Primitive Types
@@ -31,7 +34,7 @@ let queue: Queue<number> = new Queue(); // A queue of type number
 
 // Array 
 let array1: Array<number> = [1,2,3]
-let array2: number[] = [1, 3, 4]
+let array2: number[] = [1, 3, 4]  
 
 // Tuple - fixed length
 let tuple2: [ number, number] = [0,0]
@@ -54,5 +57,71 @@ type Point = { x: number, y: number};
 let center2: Point = {
  x: 0,
  y: 1,
+}
 
+ // Function
+ function add(a: number, b: number) {
+  return a + b
+ }
+
+ function sum(...values: number[]) {
+  return values.reduce((previous, current) => {
+    return previous + current});
+  
+ }
+
+ let total = sum(1, 2)
+ console.log('TOTAL 1:' + total)
+
+ total = sum(1, 2, 3)
+ console.log('TOTAL 2:' + total)
+
+
+ // First class function: store function in a variable
+ type Add = (a: number, b: number) => number; // type alias
+ let add1: (a:number, b:number) => number;
+ let add2: Add;
+
+ add2 = function(a: number, b: number): number {
+  return a + b
+ }
+
+ add2 = (a, b) => a + b; // use short-hand Arrow function
+
+ // Duck Typing
+ type Point2D = {x: number, y: number}
+ type Point3D = {x: number, y: number, z: number}
+
+ let point2D: Point2D = { x: 0, y: 10}
+ let point3D: Point3D = { x: 0, y: 10, z: 20 }
+
+ point2D = point3D;
+ 
+ function takesPoint2D(point: Point2D) {
+ }
+
+ takesPoint2D(point3D)
+
+ // Class
+ class Animal {
+  #name: string;
+
+  constructor(name: string) {
+   this.#name= name;
+
+  }
+
+  public move(distanceInMeters: number): void {
+    console.log(`${this.#name} move`)
+  }
+ }
+
+ let cat = new Animal('Cat')
+
+
+ // Class support inheritance
+class Bird extends Animal{
+    fly(distanceInMeters: number) {
+       // console.log(`${this.name} fly`)
+    }
 }
