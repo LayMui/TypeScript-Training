@@ -125,3 +125,17 @@ class Bird extends Animal{
         console.log(`${this.name} fly`)
     }
 }
+
+
+// Type Assertion: to tell TS compiler the type of a variable 
+// without having to do any of the type inference
+function load() {
+  console.log('loading')
+ return 'loading' 
+
+}
+let hello2 = load()
+const trimmed = (<string>hello2).trim()
+
+let hello3 = load()
+const trimmed2 = (hello3 as string).trim()
