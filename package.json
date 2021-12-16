@@ -6,7 +6,9 @@
   "scripts": {
     "index": "npx ts-node src/index.ts",
     "better": "npx ts-node src/better.ts",
-    "lexical": "npx ts-node src/lexical.ts"
+    "lexical": "npx ts-node src/lexical.ts",
+    "readonly": "npx ts-node src/readonly.ts",
+    "union": "npx ts-node src/union.ts"
   },
   "keywords": [],
   "author": "",
