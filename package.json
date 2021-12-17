@@ -12,7 +12,12 @@
     "literal": "npx ts-node src/literal.ts",
     "class": "npx ts-node src/class.ts",
     "type": "npx ts-node src/type.ts",
-    "classProp": "npx ts-node src/classProperties.ts"
+    "classProp": "npx ts-node src/classProperties.ts",
+    "specialType": "npx ts-node src/specialType.ts",
+    "null": "npx ts-node src/null.ts",
+    "intersection": "npx ts-node src/intersectionType.ts",
+    "optional": "npx ts-node src/optional.ts",
+    "assertion": "npx ts-node src/assertion.ts"
   },
   "keywords": [],
   "author": "",
