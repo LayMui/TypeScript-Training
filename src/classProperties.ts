@@ -1,0 +1,15 @@
+class Man {
+ // public name: string;
+ // public age: number;
+ constructor(
+  public name: string,
+  public age: number
+ ) 
+ {
+  // this.name = name;
+  // this.age = age;
+ }
+}
+
+const adam = new Man('Adam', 120000)
+console.log(adam.name, adam.age);

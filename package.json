@@ -11,7 +11,8 @@
     "union": "npx ts-node src/union.ts",
     "literal": "npx ts-node src/literal.ts",
     "class": "npx ts-node src/class.ts",
-    "type": "npx ts-node src/type.ts"
+    "type": "npx ts-node src/type.ts",
+    "classProp": "npx ts-node src/classProperties.ts"
   },
   "keywords": [],
   "author": "",
