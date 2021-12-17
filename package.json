@@ -9,7 +9,9 @@
     "lexical": "npx ts-node src/lexical.ts",
     "readonly": "npx ts-node src/readonly.ts",
     "union": "npx ts-node src/union.ts",
-    "literal": "npx ts-node src/literal.ts"
+    "literal": "npx ts-node src/literal.ts",
+    "class": "npx ts-node src/class.ts",
+    "type": "npx ts-node src/type.ts"
   },
   "keywords": [],
   "author": "",
