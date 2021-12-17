@@ -18,7 +18,8 @@
     "intersection": "npx ts-node src/intersectionType.ts",
     "optional": "npx ts-node src/optional.ts",
     "assertion": "npx ts-node src/assertion.ts",
-    "assertion2": "npx ts-node src/assertion2.ts"
+    "assertion2": "npx ts-node src/assertion2.ts",
+    "never": "npx ts-node src/never.ts"
   },
   "keywords": [],
   "author": "",

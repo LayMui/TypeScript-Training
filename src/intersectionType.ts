@@ -22,7 +22,7 @@ type Phone = {
 type ContactDetails = 
 & PersonName & Email & Phone;
 
-function contact(details: ContactDetails ) {
+function contact2(details: ContactDetails ) {
  console.log(`Dear ${details.name}.
  I hope you received our email at ${details.email}.
  We will call you at ${details.phone} shortly`)
