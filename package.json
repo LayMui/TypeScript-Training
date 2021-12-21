@@ -19,7 +19,8 @@
     "optional": "npx ts-node src/optional.ts",
     "assertion": "npx ts-node src/assertion.ts",
     "assertion2": "npx ts-node src/assertion2.ts",
-    "never": "npx ts-node src/never.ts"
+    "never": "npx ts-node src/never.ts",
+    "definiteAssign": "npx ts-node src/definiteAssign.ts"
   },
   "keywords": [],
   "author": "",
