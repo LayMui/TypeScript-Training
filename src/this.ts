@@ -10,3 +10,12 @@ const valid = {
 valid.double(); 
 
 console.log(valid.value)
+
+const invalid = {
+ value: 5,
+ double
+}
+
+invalid.double()
+
+console.log(invalid.value)
