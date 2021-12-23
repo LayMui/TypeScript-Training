@@ -20,7 +20,12 @@
     "assertion": "npx ts-node src/assertion.ts",
     "assertion2": "npx ts-node src/assertion2.ts",
     "never": "npx ts-node src/never.ts",
-    "definiteAssign": "npx ts-node src/definiteAssign.ts"
+    "definiteAssign": "npx ts-node src/definiteAssign.ts",
+    "genericConstraints": "npx ts-node src/genericConstraints.ts",
+    "lookUp": "npx ts-node src/lookUp.ts",
+    "keyOf": "npx ts-node src/keyOf.ts",
+    "conditional": "npx ts-node src/conditional.ts",
+    "cond": "npx ts-node src/cond.ts"
   },
   "keywords": [],
   "author": "",
